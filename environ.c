@@ -7,7 +7,7 @@
  * It is used to maintain constant function prototype.
  * Return: This will Always return a 0
  */
-int _myenv(ino_t *info)
+int _myenv(info_t *info)
 {
 	print_list_str(info->env);
 	return (0);
@@ -22,7 +22,7 @@ int _myenv(ino_t *info)
  *
  * Return: The function will return the value
  */
-char *_getenv(ino_t *info, const char *name)
+char *_getenv(info_t *info, const char *name)
 {
 	list_t *node = info->env;
 	char *p;
@@ -46,7 +46,7 @@ char *_getenv(ino_t *info, const char *name)
  * It is used to maintain constant function prototype.
  *  Return: The function will Always return 0.
  */
-int _mysetenv(ino_t *info)
+int _mysetenv(info_t *info)
 {
 	if (info->argc != 3)
 	{
@@ -65,7 +65,7 @@ int _mysetenv(ino_t *info)
  * It is used to maintain constant function prototype.
  * Return: This will Always 0
  */
-int _myunsetenv(ino_t *info)
+int _myunsetenv(info_t *info)
 {
 	int i;
 
@@ -89,7 +89,7 @@ int _myunsetenv(ino_t *info)
  *  It is used to maintain constant function prototype.
  * Return: This will Always return 0.
  */
-int populate_env_list(ino_t *info)
+int populate_env_list(info_t *info)
 {
 	list_t *node = NULL;
 	size_t i;
@@ -100,4 +100,3 @@ int populate_env_list(ino_t *info)
 	info->env = node;
 	return (0);
 }
-
