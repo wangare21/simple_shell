@@ -1,10 +1,9 @@
 #include "shell.h"
 
 /**
- * _eputs - This one prints an input string
- * @str: str is the string to be printed
- *
- * Return: It returns Nothing
+ * _eputs - It Prints an input string.
+ * @str: This is the string to be printed
+ * Return: Returns Nothing 
  */
 void _eputs(char *str)
 {
@@ -20,11 +19,11 @@ void _eputs(char *str)
 }
 
 /**
- * _eputchar - This writes the character c to stderr
- * @c: c the character to print
+ * _eputchar - It Writes the character c to stderr.
+ * @c: c is the character to be printed
  *
- * Return: On success it returns 1.
- * On error, -1 is returned, and err no is set appropriately.
+ * Return: On success return 1.
+ * On error, return -1, and err no is set appropriately
  */
 int _eputchar(char c)
 {
@@ -42,12 +41,12 @@ int _eputchar(char c)
 }
 
 /**
- * _putfd - This writes the character c to given fd
- * @c: This is the character to print
- * @fd: This the file descriptor to write to
+ * _putfd - It writes the character c to given fd.
+ * @c: c is the character to be printed.
+ * @fd: It is the file descriptor to write to.
  *
- * Return: On success it returns 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: 1 on success.
+ * On error, return -1, and errno is set appropriately
  */
 int _putfd(char c, int fd)
 {
@@ -65,11 +64,11 @@ int _putfd(char c, int fd)
 }
 
 /**
- * _putsfd - This one prints an input string
- * @str: str the string to be printed
- * @fd: fd is the file descriptor to write to
+ * _putsfd - Its function is to print an input string
+ * @str: This is the string to be printed.
+ * @fd: IT is the file descriptor to write to.
  *
- * Return: it returns the number of chars put
+ * Return: Returns the number of chars put.
  */
 int _putsfd(char *str, int fd)
 {
